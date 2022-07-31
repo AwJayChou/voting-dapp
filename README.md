@@ -1,3 +1,8 @@
+效果
+![image](https://github.com/AwJayChou/voting-dapp/tree/main/images/show.png)
+
+
+
 1. 环境准备
 
 sudo apt-get update
@@ -15,6 +20,9 @@ npm install ganache-cli web3@0.20.1 solc
 node_modules/.bin/ganache-cli
 启动私链
 npx ganache-cli
+
+node server.js
+访问 http://127.0.0.1:8080/index.html#
 
 2. 编译
 
