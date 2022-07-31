@@ -1,6 +1,5 @@
-效果
-![image](https://github.com/AwJayChou/voting-dapp/tree/main/images/show.png)
-
+## 效果
+![image](https://github.com/AwJayChou/voting-dapp/blob/main/images/show.png?raw=true)
 
 
 1. 环境准备
