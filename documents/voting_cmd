@@ -13,6 +13,8 @@ mkdir -p ethereum/voting_dapp
 cd ethereum/voting_dapp
 npm install ganache-cli web3@0.20.1 solc
 node_modules/.bin/ganache-cli
+启动私链
+npx ganache-cli
 
 2. 编译
 
@@ -43,7 +45,7 @@ Execute this in your node console:
 > abiDefinition = JSON.parse(compiledCode.contracts[':Voting'].interface)
 > VotingContract = web3.eth.contract(abiDefinition)
 > byteCode = compiledCode.contracts[':Voting'].bytecode
-> deployedContract = VotingContract.new(['Rama','Nick','Jose'],{data: byteCode, from: web3.eth.accounts[0], gas: 4700000})
+> deployedContract = VotingContract.new(['Alice','Bob','Cary'],{data: byteCode, from: web3.eth.accounts[0], gas: 4700000})
 > deployedContract.address
 '0x0396d2b97871144f75ba9a9c8ae12bf6c019f610' <- Your address will be different
 > contractInstance = VotingContract.at(deployedContract.address)
